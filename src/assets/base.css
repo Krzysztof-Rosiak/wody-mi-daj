@@ -1,0 +1,231 @@
+/* ── Botanical design tokens ─────────────────────────────────────────────── */
+:root {
+  --ink:         #2a2a28;
+  --ink-2:       #5a5a55;
+  --ink-3:       #9a968c;
+  --paper:       #faf7f0;
+  --paper-2:     #f2ece0;
+  --paper-card:  #ffffff;
+  --line:        #2a2a28;
+  --accent:      #4a7a4a;
+  --accent-soft: #cfe0c5;
+  --accent-deep: #2f5a34;
+  --warn:        #b8714a;
+  --warn-soft:   #ecd3c2;
+  --blue:        #5c7a9a;
+  --blue-soft:   #d7e0ea;
+  --mist:        #8a8aa8;
+  --mist-soft:   #dcdce6;
+  --teal:        #3a8a7a;
+  --teal-soft:   #c8e8e2;
+  --copper:        #a06040;
+  --copper-soft:   #f0e4d8;
+  --brown:       #7c5535;
+  --brown-soft:  #f0e4d4;
+
+  /* condition colors (survey) */
+  --cond-2:      #c07000;
+  --cond-2-soft: #fff0d0;
+  --cond-3:      #7a8000;
+  --cond-3-soft: #f3f5d8;
+  --cond-5:      #1a7a3a;
+  --cond-5-soft: #d4eddc;
+
+  /* border-radius tokens — sketchy feel */
+  --r-card: 14px 18px 16px 20px / 20px 14px 18px 16px;
+  --r-chip: 10px 12px 11px 13px / 13px 11px 12px 10px;
+  --r-blob: 50% 40% 55% 45% / 55% 60% 40% 45%;
+
+  /* shadows */
+  --shadow-card: 3px 3px 0 var(--paper-2), 3px 3px 0 2px var(--line);
+  --shadow-nav-active: 2px 2px 0 var(--line);
+}
+
+/* ── Dark tokens ─────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink:         #e8e3d8;
+    --ink-2:       #a89f90;
+    --ink-3:       #6a6560;
+    --paper:       #1a1c18;
+    --paper-2:     #232620;
+    --paper-card:  #232620;
+    --line:        #3a3d36;
+    --accent:      #7aaa72;
+    --accent-soft: #2a3d28;
+    --accent-deep: #9ecf94;
+    --warn:        #d4845a;
+    --warn-soft:   #3a2318;
+    --blue:        #7a9ec0;
+    --blue-soft:   #1e2d3a;
+    --mist:        #9898b8;
+    --mist-soft:   #252535;
+    --teal:        #5ab8a8;
+    --teal-soft:   #1a3530;
+    --copper:        #c07850;
+    --copper-soft:   #2e1e10;
+    --brown:       #b07848;
+    --brown-soft:  #2e1e10;
+    --cond-2:      #d4900a;
+    --cond-2-soft: #2e2010;
+    --cond-3:      #a0aa20;
+    --cond-3-soft: #222510;
+    --cond-5:      #58c878;
+    --cond-5-soft: #102818;
+  }
+}
+
+[data-theme="dark"] {
+  --ink:         #e8e3d8;
+  --ink-2:       #a89f90;
+  --ink-3:       #6a6560;
+  --paper:       #1a1c18;
+  --paper-2:     #232620;
+  --paper-card:  #232620;
+  --line:        #3a3d36;
+  --accent:      #7aaa72;
+  --accent-soft: #2a3d28;
+  --accent-deep: #9ecf94;
+  --warn:        #d4845a;
+  --warn-soft:   #3a2318;
+  --blue:        #7a9ec0;
+  --blue-soft:   #1e2d3a;
+  --mist:        #9898b8;
+  --mist-soft:   #252535;
+  --teal:        #5ab8a8;
+  --teal-soft:   #1a3530;
+  --copper:        #c07850;
+  --copper-soft:   #2e1e10;
+  --brown:       #b07848;
+  --brown-soft:  #2e1e10;
+  --cond-2:      #d4900a;
+  --cond-2-soft: #2e2010;
+  --cond-3:      #a0aa20;
+  --cond-3-soft: #222510;
+  --cond-5:      #58c878;
+  --cond-5-soft: #102818;
+}
+
+[data-theme="light"] {
+  --ink:         #2a2a28;
+  --ink-2:       #5a5a55;
+  --ink-3:       #9a968c;
+  --paper:       #faf7f0;
+  --paper-2:     #f2ece0;
+  --paper-card:  #ffffff;
+  --line:        #2a2a28;
+  --accent:      #4a7a4a;
+  --accent-soft: #cfe0c5;
+  --accent-deep: #2f5a34;
+  --warn:        #b8714a;
+  --warn-soft:   #ecd3c2;
+  --blue:        #5c7a9a;
+  --blue-soft:   #d7e0ea;
+  --mist:        #8a8aa8;
+  --mist-soft:   #dcdce6;
+  --teal:        #3a8a7a;
+  --teal-soft:   #c8e8e2;
+  --copper:        #a06040;
+  --copper-soft:   #f0e4d8;
+  --brown:       #7c5535;
+  --brown-soft:  #f0e4d4;
+  --cond-2:      #c07000;
+  --cond-2-soft: #fff0d0;
+  --cond-3:      #7a8000;
+  --cond-3-soft: #f3f5d8;
+  --cond-5:      #1a7a3a;
+  --cond-5-soft: #d4eddc;
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+input, select, textarea {
+  font-size: max(16px, 1em);
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  background: var(--paper);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

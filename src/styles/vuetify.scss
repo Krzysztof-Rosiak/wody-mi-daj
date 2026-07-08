@@ -1,0 +1,5 @@
+// Minimal Vuetify SASS config for CSS tree-shaking.
+// vite-plugin-vuetify reads this file and uses it as the entry point
+// for each component's SCSS — only CSS for actually-imported components
+// gets compiled into the bundle (instead of the full ~180KB vuetify/styles).
+@use 'vuetify/settings';
